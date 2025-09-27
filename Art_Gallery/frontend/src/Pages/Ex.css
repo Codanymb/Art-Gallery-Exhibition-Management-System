@@ -1,0 +1,252 @@
+/* ===== Global Styles ===== */
+body, html {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: #fdf9f4;
+  color: #3e2f1c;
+}
+
+.ex-wrapper, .home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #6b4e3a;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+
+/* ===== Filters & Search ===== */
+.filters-container, .search-bar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.search-input,
+.filter-select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 15px;
+  background: white;
+  min-width: 180px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-input {
+  max-width: 320px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.search-input:focus,
+.filter-select:focus {
+  border-color: #8b5e3c;
+}
+
+.filter-select {
+  cursor: pointer;
+}
+
+/* ===== Exhibitions Grid ===== */
+.exhibitions-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0d4c0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  margin: 10px 0 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* ===== Status Chips ===== */
+.chip {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.chip.coming {
+  background: #fff4d1;
+  color: #8a6d3b;
+}
+
+.chip.ongoing {
+  background: #d8f3dc;
+  color: #1b5e20;
+}
+
+.chip.completed {
+  background: #fde2e4;
+  color: #8b0000;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: #8b5e3c;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #6b4229;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #8b5e3c;
+  border: 1px solid #bfa58d;
+}
+
+.btn.secondary:hover {
+  background: #f0e6dd;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  text-align: center;
+  color: #8b5e3c;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* ===== Card Actions ===== */
+.card-actions {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== Modal ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.modal label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.modal select,
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .filters-container,
+  .search-bar-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input,
+  .filter-select {
+    width: 100%;
+  }
+}
+

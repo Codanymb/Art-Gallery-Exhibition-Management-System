@@ -1,0 +1,100 @@
+/* ===== Add Art Form Wrapper ===== */
+.add-art-form {
+  background: white;
+  border: 1px solid #e0d4c0;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Form Labels ===== */
+.add-art-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #3e2f1c;
+}
+
+/* ===== Inputs, Selects & Textarea ===== */
+.add-art-form input,
+.add-art-form textarea,
+.add-art-form select {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-art-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-art-form input:focus,
+.add-art-form textarea:focus,
+.add-art-form select:focus {
+  border-color: #8b5e3c;
+}
+
+/* ===== Submit Button ===== */
+.add-art-form .btn.primary {
+  align-self: flex-start;
+  padding: 10px 18px;
+  background: #8b5e3c;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-art-form .btn.primary:hover {
+  background: #6b4229;
+}
+
+/* ===== Page Header ===== */
+.home-wrapper h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #3e2f1c;
+}
+
+.home-wrapper .subtitle {
+  color: #6b4e3a;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  font-style: italic;
+  letter-spacing: 0.4px;
+}
+
+/* ===== Dropdown Specific Styling ===== */
+.add-art-form select {
+  cursor: pointer;
+  background: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .add-art-form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .add-art-form .btn.primary {
+    width: 100%;
+    text-align: center;
+  }
+}

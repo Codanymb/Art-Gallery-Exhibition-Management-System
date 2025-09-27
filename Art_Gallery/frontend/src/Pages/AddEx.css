@@ -1,0 +1,77 @@
+.add-exhibition-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e0d4c0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.add-exhibition-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3e2f1c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-exhibition-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #5a4a3a;
+}
+
+.add-exhibition-form input,
+.add-exhibition-form select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  margin-top: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background: #fff;
+}
+
+.add-exhibition-form input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.add-exhibition-form input:focus,
+.add-exhibition-form select:focus {
+  border-color: #8b5e3c;
+}
+
+.add-exhibition-form select {
+  cursor: pointer;
+}
+
+.add-exhibition-form .btn.primary {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  background: #8b5e3c;
+  color: white;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.add-exhibition-form .btn.primary:hover {
+  background: #6b4229;
+}
+
+@media (max-width: 768px) {
+  .add-exhibition-wrapper {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+}

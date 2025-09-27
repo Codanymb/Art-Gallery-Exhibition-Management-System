@@ -1,0 +1,124 @@
+/* Wrapper */
+.registrations-wrapper {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Title + subtitle */
+.registrations-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.registrations-header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.registrations-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Grid */
+.registrations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.registration-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registration-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.registration-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Info rows */
+.registration-info {
+  margin-bottom: 10px;
+}
+
+.registration-info strong {
+  color: #222;
+  margin-right: 5px;
+}
+
+.registration-info span {
+  color: #555;
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status-draft {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-submitted {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Actions */
+.registration-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.registration-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-view {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-view:hover {
+  background: #2563eb;
+}
+
+.btn-update {
+  background: #10b981;
+  color: white;
+}
+
+.btn-update:hover {
+  background: #059669;
+}

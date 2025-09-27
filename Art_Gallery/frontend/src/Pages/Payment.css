@@ -1,0 +1,74 @@
+/* Payment.css */
+
+.payment-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-form label {
+  font-weight: 600;
+  color: #555;
+}
+
+.payment-form input,
+.payment-form select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  outline: none;
+  border-color: #8b5e3c;
+  box-shadow: 0 0 0 2px rgba(139, 94, 60, 0.2);
+}
+
+.payment-form button {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #8b5e3c;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.payment-form button:hover {
+  background-color: #6b4229;
+}
+
+.payment-form label:last-of-type {
+  margin-top: 0.5rem;
+}
+
+.payment-form .total-amount {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: right;
+  margin-top: 1rem;
+  color: #333;
+}

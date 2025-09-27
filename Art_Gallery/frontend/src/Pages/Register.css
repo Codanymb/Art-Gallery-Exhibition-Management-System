@@ -1,0 +1,166 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+  background-image: url('../Components/Assets/art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay effect */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.register {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 460px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.register:hover {
+  transform: translateY(-4px);
+}
+
+.register h1 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 1.4rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.register-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Confirmation Screen */
+.confirmation {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.confirmation h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.confirmation-details {
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-details p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+.login-link {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-link span {
+  color: #007BFF;
+  cursor: pointer;
+  font-weight: 600;
+}

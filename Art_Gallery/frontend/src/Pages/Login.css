@@ -1,0 +1,121 @@
+/* Login Page */
+.login-page {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+  
+  background-image: url('../Components/Assets/art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Optional overlay effect to make the form stand out */
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+
+/* Login Card */
+.login-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.login-card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Messages */
+.message {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.message.success {
+  background-color: #6b4229;
+  color:#6b4229;
+}
+
+.message.error {
+  background-color: #fcd9d9;
+  color: #6b4229;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #6b4229;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: #6b4229;
+}
+
+.login-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Register Link */
+.register-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link span {
+  color: #6b4229;
+  cursor: pointer;
+}
+
+.register-link span:hover {
+  text-decoration: underline;
+}

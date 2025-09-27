@@ -1,0 +1,61 @@
+/* Full-page layout */
+.art-wrapper,
+.home-wrapper {
+  width: 100%;
+  min-height: 100vh; /* full viewport height */
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: #f9f7f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* prevent horizontal scrolling */
+}
+
+.content {
+  flex: 1; /* take all available vertical space */
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scrolling globally */
+}
+
+/* Keep everything inside the viewport */
+.exhibitions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .exhibitions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .exhibitions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .exhibitions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Optional: make footer stick to bottom if page content is short */
+footer {
+  margin-top: auto;
+}
